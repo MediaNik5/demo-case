@@ -1,4 +1,4 @@
-# routing-controllers with express demo
+# demo-task
 
 1. Install all dependencies:
 
