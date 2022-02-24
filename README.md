@@ -3,14 +3,17 @@
 1. Install all dependencies:
 
     `npm install`
-    
-2. Run the project:
+2. Create [ormconfig.json](https://typeorm.io/#/using-ormconfig)
+3. Run migrations: 
+
+   `npm migrate`
+5. Run the project:
 
     `npm start`
 
-3. Open in browser:
+6. Open in browser:
  
-    `http://localhost:3000/posts`
+    `http://localhost:3000/cars`
 
 ### Using with older versions of node
 

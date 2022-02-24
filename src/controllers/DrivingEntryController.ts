@@ -15,6 +15,7 @@ export class DrivingEntryController {
 
     @Post("/new")
     public newDrivingEntry(@Body() drivingEntry: DrivingEntry): Promise<DrivingEntry> {
+        drivingEntry.date = new Date();
         return this.drivingEntryRepository.save(drivingEntry);
     }
 

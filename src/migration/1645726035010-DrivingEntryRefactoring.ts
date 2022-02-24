@@ -6,8 +6,8 @@ export class DrivingEntryRefactoring1645726035010 implements MigrationInterface 
         return queryRunner.query(
             'create table "driving_entry"(' +
                 '"id" serial primary key,' +
-                '"car" integer references "car"("id") not null,' +
-                '"user" integer references "user"("id"),' +
+                '"carId" integer references "car"("id") not null,' +
+                '"userId" integer references "user"("id"),' +
                 '"date" timestamp not null' +
             ')'
         )

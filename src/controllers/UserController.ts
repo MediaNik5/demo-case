@@ -11,6 +11,7 @@ export class UserController {
 
     @Post("/new")
     public newUser(@Body() user: User): Promise<User>{
+        user.date = new Date()
         return this.userRepository.save(user);
     }
 
@@ -44,7 +45,7 @@ export class UserController {
     }
 
     @Delete("/delete")
-    public deleteUser(@Body() id: number): Promise<DeleteResult>{
+    public deleteUser(@QueryParam("id") id: number): Promise<DeleteResult>{
         return this.userRepository.delete(id);
     }
 }

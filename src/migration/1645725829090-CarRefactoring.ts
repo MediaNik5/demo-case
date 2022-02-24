@@ -7,7 +7,7 @@ export class CarRefactoring1645725829090 implements MigrationInterface {
             'create table "car"(' +
                 '"id" serial primary key,' +
                 '"brand" varchar(50) not null,' +
-                '"owner" integer references "user"("id") not null' +
+                '"ownerId" integer references "user"("id") not null' +
             ')'
         );
     }
